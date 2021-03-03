@@ -49,40 +49,34 @@
         <div class="container px-5 py-24 mx-auto">
           <h1 class="text-white text-6xl font-bold mb-6">Visiter l'Alsace</h1>
 
-          <form class="w-1/2 max-w-lg" action="https://jamform.com/f/MgtVGo7j4jROtFTzwTCot" enctype="multipart/form-data"
-            method="POST">
+          <form class="w-1/2 max-w-lg" action="https://jamform.com/f/MgtVGo7j4jROtFTzwTCot"
+            enctype="multipart/form-data" method="POST">
             <div class="flex flex-wrap -mx-3 mb-1">
               <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0">
                 <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="grid-first-name" type="text" placeholder="Prenom">
-              </div>
-              <div class="w-full md:w-1/2 px-3">
-                <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-last-name" type="text" placeholder="Nom">
+                  class="appearance-none block w-full bg-gray-200 text-gray-700 border hover:border-purple-600 focus:ring-indigo-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  id="grid-first-name" type="text" name="name" placeholder="Nom">
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-1">
               <div class="w-full px-3">
                 <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="email" type="email" placeholder="Email">
+                  class="appearance-none block w-full bg-gray-200 text-gray-700 border hover:border-purple-600 focus:ring-indigo-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="email" type="email" name="email" placeholder="Email">
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-1">
               <div class="w-full px-3">
-                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-1" for="grid-password">
-                  Message
-                </label>
-                <textarea
-                  class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
-                  id="message"></textarea>
+                <input
+                  class="appearance-none block w-full bg-gray-200 text-gray-700 focus:ring-2 hover:border-purple-600 focus:ring-indigo-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  id="grid-first-name" type="text" name="message" placeholder="Message et dates de reservation">
               </div>
             </div>
             <div class="md:flex md:items-center">
               <div class="md:w-1/2">
-                <button class="bg-white text-gray-600 font-semibold py-1 px-5 rounded mt-1" type="submit">Je
+                <button
+                  class="bg-white text-gray-600 font-semibold py-1 px-5 rounded mt-1 hover:bg-indigo-600 hover:text-white"
+                  type="submit">Je
                   réserve</button>
               </div>
               <div class="md:w-2/3"></div>
@@ -91,8 +85,8 @@
         </div>
       </div>
     </div>
-
   </section>
+
   <section class="text-gray-700 body-font" id="ledomaine">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
