@@ -48,40 +48,9 @@
       <div class="flex items-center justify-start h-full w-full bg-gray-900 bg-opacity-50">
         <div class="container px-5 py-24 mx-auto">
           <h1 class="text-white text-6xl font-bold mb-6">Visiter l'Alsace</h1>
-
-          <form class="w-1/2 max-w-lg" action="https://jamform.com/f/MgtVGo7j4jROtFTzwTCot"
-            enctype="multipart/form-data" method="POST">
-            <div class="flex flex-wrap -mx-3 mb-1">
-              <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0">
-                <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border hover:border-purple-600 focus:ring-indigo-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="grid-first-name" type="text" name="name" placeholder="Nom">
-              </div>
-            </div>
-            <div class="flex flex-wrap -mx-3 mb-1">
-              <div class="w-full px-3">
-                <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border hover:border-purple-600 focus:ring-indigo-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="email" type="email" name="email" placeholder="Email">
-              </div>
-            </div>
-            <div class="flex flex-wrap -mx-3 mb-1">
-              <div class="w-full px-3">
-                <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 focus:ring-2 hover:border-purple-600 focus:ring-indigo-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="grid-first-name" type="text" name="message" placeholder="Message et dates de reservation">
-              </div>
-            </div>
-            <div class="md:flex md:items-center">
-              <div class="md:w-1/2">
-                <button
-                  class="bg-white text-gray-600 font-semibold py-1 px-5 rounded mt-1 hover:bg-indigo-600 hover:text-white"
-                  type="submit">Je
-                  réserve</button>
-              </div>
-              <div class="md:w-2/3"></div>
-            </div>
-          </form>
+          <a href="#reservationForm">
+          <button type="button" class="focus:outline-none text-white font-bold text-sm py-2.5 px-5 rounded-md bg-purple-600 hover:bg-purple-800 ease-in-out duration-700 hover:shadow-lg">Je réserve mon séjour</button>
+        </a>
         </div>
       </div>
     </div>
@@ -239,9 +208,47 @@
       <iframe class="rounded-lg" scrolling="no" marginheight="0" marginwidth="0"
         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=233%20Lieu-dit,%2068370%20Orbey+(Le%20Domaine%20De%20Pairis%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         width="100%" height="600" frameborder="0"></iframe>
-      <a href="https://www.maps.ie/route-planner.htm">Google Route Planner</a>
     </div>
   </section>
+
+
+<section class="text-gray-600 body-font relative" id="reservationForm">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-5xl font-bold title-font mb-4 text-gray-900">Formulaire de réservation</h1>
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-600">Nom</label>
+            <form action="https://formsubmit.co/domainedepairis68@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Demande de réservation">
+              <input type="hidden" name="_next" value="https://www.domainedepairis.com/reservation.html">
+            <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+            <textarea id="message" name="message" class="placeholder-gray-600 w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required placeholder="N'oubliez pas de mentionnez vos dates de séjours"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <button type="submit" class="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Je fait ma demande</button>
+        </div>
+      </form> 
+       
+      </div>
+    </div>
+  </div>
+</section>
 
   <footer class="body-font bg-indigo-500">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
